@@ -1,0 +1,185 @@
+/*WRITE A PROGRAM WHICH ACCEPT NUMBER FROM USER AND DISPLAY BELOW PATTERN*/
+# include<stdio.h.>
+
+
+void Display(int iNo)
+{
+    int iCnt =0;
+
+    for(iCnt =1;iCnt<=iNo;iCnt++)
+    {
+        printf("*\t");
+       
+    }
+    for(iCnt =1;iCnt<=iNo;iCnt++)
+    {
+       
+         printf("#\t");
+
+    }
+}
+
+
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter Number");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+
+    return 0;
+}
+
+/*ACCEPT AMOUNT IN US DOLLAR AND RETURN ITS CORRESPONDING VALUE IN INDIAN CURRENCY
+CONSIDER 1$ AS 70 RUPEES*/
+
+# include<stdio.h>
+
+int DollarToINR(int iNo)
+{
+   int iAns = 0;
+
+   iAns = 70*iNo;
+}
+
+
+int main()
+{
+    int iValue = 0 ,iRet = 0;
+
+    printf("Enter number of USD:");
+    scanf("%d",&iValue);
+
+    iRet = DollarToINR(iValue);
+
+    printf("value in INR is: %d\n",iRet);
+
+    return 0;
+}
+
+/*WRITE A PROGRAM TO FIND EVEN FACTORIAL OF GIVEN NUMBER*/
+# include<stdio.h>
+
+int EvenFactorial(int iNo)
+{
+    int iCnt = 0;
+    int iMultiply = 1;
+    if(iNo<0)
+    {
+        iNo = -iNo;
+    }
+    for(iCnt = 1;iCnt<=iNo;iCnt++)
+    {
+        if ((iCnt%2)==0)
+        {
+            iMultiply = iMultiply*iCnt;
+        }
+      
+    }
+    return iMultiply;
+}
+
+
+int main()
+{
+int iValue =0 ,iRet = 0;
+
+printf("Enter number:");
+
+scanf("%d",&iValue);
+
+iRet = EvenFactorial(iValue);
+
+printf("Even Factorial of number is :%d",iRet);
+
+    return 0;
+}
+
+/*WRITE A PROGRAM TO FIND ODD FACTORIAL OF GIVEN NUMBER*/
+
+# include<stdio.h>
+
+int EvenFactorial(int iNo)
+{
+    int iCnt = 0;
+    int iMultiply = 1;
+    if(iNo<0)
+    {
+        iNo = -iNo;
+    }
+    for(iCnt = 1;iCnt<=iNo;iCnt++)
+    {
+        if ((iCnt%2)>=1)
+        {
+            iMultiply = iMultiply*iCnt;
+        }
+      
+    }
+    return iMultiply;
+}
+
+
+int main()
+{
+int iValue =0 ,iRet = 0;
+
+printf("Enter number:");
+
+scanf("%d",&iValue);
+
+iRet = EvenFactorial(iValue);
+
+printf("Even Factorial of number is :%d",iRet);
+
+    return 0;
+}
+
+/*WRITE A PROGRAM WHICH RETURNS DIFFERENCE BETWEEN EVEN FACTORIAL AND ODD FACTORIAL
+OF GIVEN NUMBEER.*/
+
+
+# include<stdio.h>
+
+int FactorialDiff(int iNo)
+{
+    int iCnt = 0;
+    int iMultiply = 1;
+     int iMultiply1 = 1;
+    if(iNo<0)
+    {
+        iNo = -iNo;
+    }
+    for(iCnt = 1;iCnt<=iNo;iCnt++)
+    {
+        if ((iCnt%2)==0)
+        {
+            iMultiply = iMultiply*iCnt;
+        }
+      
+    }
+    for(iCnt = 1;iCnt<=iNo;iCnt++)
+    {
+        if ((iCnt%2)>=1)
+        {
+            iMultiply1 = iMultiply1*iCnt;
+        }
+      
+    }
+    return iMultiply-iMultiply1;
+}
+
+int main()
+{
+int iValue = 0,iRet = 0;
+
+printf("Enter number:\n");
+scanf("%d",&iValue);
+iRet = FactorialDiff(iValue);
+printf("Factorial differnece is %d:",iRet);
+
+    return 0;
+}
+

@@ -1,0 +1,213 @@
+/*WRITE A PROGRAM WHICH ACCEPT NUMBEER FROM USER AND IF NUMBERS IS LESS THAN 50
+THEN PRINT SMALL, IF IT IS GREATER THAN 50 AND LESS THAN 100 THEN PRINT MEDIUM
+IF IT IS GREATER THAN 100 THEN PRINT LARGE*/
+
+# include<stdio.h>
+
+void Number(int iNo)
+{    
+    int iCnt = iNo;
+    if(iCnt<50)
+    {
+        printf("small");
+    }
+    else if((50<=iCnt)&&(iCnt<100))
+    {
+        printf("medium");
+    } 
+    else if(iCnt>=100)
+    {
+        printf("large");
+    }
+
+}
+
+
+
+int main()
+{
+
+int iValue = 0;
+
+printf("enter number:\n");
+
+scanf("%d",&iValue);
+
+Number(iValue);
+
+
+
+    return 0;
+}
+
+/*ACCEPT SINGLE DIGIT NUMBER FROM USER AND PRINT IT IN TO WORD*/
+# include<stdio.h>
+
+void Display(int iNo)
+{
+    if(iNo<=9)
+    {
+      if(iNo==0)
+      {
+        printf("ZERO");
+      }
+      else if(iNo==1)
+      {
+        printf("one");
+      }
+      else if(iNo==2)
+      {
+        printf("two");
+      }
+      else if(iNo==3)
+      {
+        printf("three");
+      }
+      else if(iNo==4)
+      {
+        printf("four");
+      }
+      else if(iNo==5)
+      {
+        printf("five");
+      }
+      else if(iNo==6)
+      {
+        printf("six");
+      }
+      else if(iNo==7)
+      {
+        printf("seven");
+      }
+      else if(iNo==8)
+      {
+        printf("eight");
+      }
+      else if(iNo==9)
+      {
+        printf("nine");
+      }
+      
+    }
+    else
+    {
+        printf("invalid number");
+    }
+
+}
+
+int main()
+
+{
+
+  int iValue = 0;
+
+  printf("enter number");
+
+  scanf("%d",&iValue);
+
+Display(iValue);
+
+
+
+
+    return 0;
+}
+
+/*WRITE A PROGRAM TO FIND FACTORIAL OF GIVEN NUMBER*/
+
+# include<stdio.h>
+
+
+int Factorial(int iNo)
+{
+    if(iNo<0)
+    {
+        iNo = -iNo;
+    }
+    int iCnt = 0;
+    int iMultipy  = 1;
+    for(iCnt =iNo;iCnt>=1;iCnt--)
+    {
+        iMultipy = iMultipy*iCnt;
+    }
+    return iMultipy;
+}
+
+int main()
+{
+int iValue = 0 , iRet =0;
+
+printf("enter number:\n");
+scanf("%d",&iValue);
+iRet = Factorial(iValue);
+printf("factorial of number is %d",iRet);
+
+
+
+    return 0;
+}
+
+/*WRITE A PROGRAM WHICH ACCEPT NUMBER FROM USER AND DISPLAY ITS TABLE*/
+
+# include <stdio.h>
+
+
+void Table(int iNo)
+{
+ if(iNo<0)
+ {
+  iNo = -iNo;
+ }
+ int iCnt =0;
+
+ for(iCnt = iNo;iCnt<=iNo*10;)
+ {
+  printf("%d\t",iCnt);
+  iCnt = iCnt+iNo;
+ }
+}
+
+
+int main ()
+{
+int iValue = 0;
+
+printf("Enter numbeer");
+scanf("%d",&iValue);
+
+Table(iValue);
+  return 0;
+}
+
+/*WRITE A PROGRAM WHICH ACCEPT NUMBER FROM USER AND DISPLAY ITS TABLE IN REVERSE*/
+
+# include <stdio.h>
+void Table(int iNo)
+{
+ if(iNo<0)
+ {
+  iNo = -iNo;
+ }
+ int iCnt = 0;
+ int itable = iNo*10;
+ int iAns = itable;
+ for(iCnt=itable;iCnt>=iNo;)
+ {
+    printf("%d\t",itable);
+
+    iAns = (iNo*10)-iNo;
+ }
+}
+
+
+int main ()
+{
+int iValue = 0;
+
+printf("Enter number:\n");
+scanf("%d",&iValue);
+
+Table(iValue);
+  return 0;
+}

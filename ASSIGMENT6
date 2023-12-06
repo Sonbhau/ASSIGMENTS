@@ -1,0 +1,140 @@
+/*WRITE A PROGRAM WHICH ACCEPT NUMBER FROM USER AND PRINT THAT NUMBER OF $&*
+ON SCREEN*/
+
+
+# include<stdio.h>
+
+void Pattern(int iNo)
+{
+    int iCnt = 0;
+
+    for(iCnt=0;iCnt<(-iNo);iCnt++)
+    {
+        printf("$\t*\t");
+    }
+}
+
+
+int main()
+{
+
+ int iValue = 0;
+ printf("enter number");
+ scanf("%d",&iValue);
+
+ Pattern(iValue);
+
+    return 0;
+}
+
+/*WRITE A PROGRAM WHICH ACCEPT NUMBER FROM USER AND PRINT NUMBERS TILL THAT
+NUMBER*/
+
+#include<stdio.h>
+
+void Display(int iNo)
+{
+    int iCnt = 0;
+
+    for(iCnt=1;iCnt<=iNo;iCnt++)
+    {
+        printf("%d\t",iCnt);
+    }
+}
+
+
+int main()
+{
+
+ int iValue = 0;
+ printf("enter number:");
+ scanf("%d",&iValue);
+
+ Display(iValue);
+
+    return 0;
+}
+
+/*WRITE A PROGRAM WHICH ACCEPT NUMBEER FROM USER AND PRINT ITS NUMBERS LINE*/
+
+
+#include<stdio.h>
+
+void Display(int iNo)
+{
+    int iCnt = 0;
+
+    for(iCnt=-iNo;iCnt<=iNo;iCnt++)
+    {
+        printf("%d\t",iCnt);
+    }
+}
+
+
+int main()
+{
+
+ int iValue = 0;
+ printf("enter number:");
+ scanf("%d",&iValue);
+
+ Display(iValue);
+
+    return 0;
+}
+
+/*WRITE A PROGRAM WHICH ACCEPTS N FROM USER AND PRINT ALL ODD NUMBERS UP TO N*/
+
+
+# include<stdio.h>
+
+void OddDisplay(int iNo)
+{
+    int iCnt = 0;
+
+    for(iCnt = 1;iCnt<=iNo;iCnt++)
+    {
+        if((iCnt%2)!=0);
+        {
+            printf("%d\t",iCnt);
+        }
+    }
+}
+
+
+int main()
+{
+  int iValue = 0;
+  printf("enter number");
+  scanf("%d",&iValue);
+
+  OddDisplay(iValue);
+
+    return 0;
+}
+
+/*WRITE A PROGRAM WHICH ACCEPT N AND PRINT FIRST 5 MULTIPLES OF N*/
+# include<stdio.h>
+
+void MultipleDisplay(int iNo)
+{
+    int iCnt = iNo;
+    while(iCnt<=iNo*5)
+    {
+        printf("%d\t",iCnt);
+        iCnt = iCnt+iNo; 
+    }
+}
+
+int main()
+{
+
+int iValue = 0;
+printf("Enter number");
+scanf("%d",&iValue);
+MultipleDisplay(iValue);
+
+    return 0;
+}
+
+

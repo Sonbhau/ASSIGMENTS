@@ -1,0 +1,209 @@
+/*ACCEPT N NUMBERS FROM USER AND RETURN DIFFERENCE BETWEEN SUMMATION OF EVEN ELEMENTS 
+AND SUMMATION OF ODD ELEMENTS*/
+
+# include<stdio.h>
+# include<stdlib.h>
+
+int Difference(int *Arr,int iSize)
+{
+    int iCnt = 0;
+    int iEsum = 0;
+    int iOsum = 0;
+    for(iCnt=0;iCnt<iSize;iCnt++)
+    {
+        if((Arr[iCnt]%2)==0)
+        {
+            iEsum = iEsum+Arr[iCnt];
+        }
+        else
+         {
+            iOsum = iOsum+Arr[iCnt];
+         }
+    }
+    return iEsum-iOsum;
+}
+
+int main()
+{
+    int iCount = 0;
+    int *ptr = NULL;
+    int iCnt = 0;
+    int iRet =  0 ;
+    printf("Enter the number of elements :\n");
+    scanf("%d",&iCount);
+
+    ptr = (int*)malloc(iCount*sizeof(int));
+    printf("Enter the elements :\n");
+    for(iCnt=0;iCnt<iCount;iCnt++)
+    {
+        scanf("%d",&ptr[iCnt]);
+    }
+   iRet = Difference(ptr,iCount);
+
+   printf("Result is :%d",iRet);
+   free(ptr);
+   
+    return 0;
+}
+/*ACCEPT N NUMBERS FROM USER AND DISPLAY ALL SUCH ELEMNTS WHICH ARE DIVISIBLE BY 5*/
+
+
+# include<stdio.h>
+# include<stdlib.h>
+
+void Display(int *Arr,int iSize)
+{  int iCnt = 0;
+    
+    for(iCnt=0;iCnt<iSize;iCnt++)
+    {
+        if ((Arr[iCnt]%5)==0)
+        {
+            printf("%d\t",Arr[iCnt]);
+        }
+    }
+    
+}
+
+int main()
+{
+    int iCount = 0;
+    int *ptr = NULL;
+    int iCnt = 0;
+    int iRet =  0 ;
+    printf("Enter the number of elements :\n");
+    scanf("%d",&iCount);
+
+    ptr = (int*)malloc(iCount*sizeof(int));
+    printf("Enter the elements :\n");
+    for(iCnt=0;iCnt<iCount;iCnt++)
+    {
+        scanf("%d",&ptr[iCnt]);
+    }
+ Display(ptr,iCount);
+
+   
+   free(ptr);
+   
+    return 0;
+}
+/*AACEPT N NUMBERS FROM USER AND DISPLAY ALL SUCH ELEMENTS WHICH ARE EVEN AND DIVISIBLE BY 5*/
+
+# include<stdio.h>
+# include<stdlib.h>
+
+void Display(int *Arr,int iSize)
+{  int iCnt = 0;
+    
+    for(iCnt=0;iCnt<iSize;iCnt++)
+    {
+        if(((Arr[iCnt]%5)==0)&&(Arr[iCnt]%2)==0)
+        {
+            printf("Elements are:%d\t",Arr[iCnt]);
+        }
+    }
+    
+}
+
+int main()
+{
+    int iCount = 0;
+    int *ptr = NULL;
+    int iCnt = 0;
+    int iRet =  0 ;
+    printf("Enter the number of elements :\n");
+    scanf("%d",&iCount);
+
+    ptr = (int*)malloc(iCount*sizeof(int));
+    printf("Enter the elements :\n");
+    for(iCnt=0;iCnt<iCount;iCnt++)
+    {
+        scanf("%d",&ptr[iCnt]);
+    }
+ Display(ptr,iCount);
+
+   
+   free(ptr);
+   
+    return 0;
+}
+/*ACCEPT N NUMBER FROM USER AND DISPLAY ALL SUCH ELEMENTS WHICH ARE DIVISIBLE BY 3 & 5*/
+
+
+# include<stdio.h>
+# include<stdlib.h>
+
+void Display(int *Arr,int iSize)
+{  int iCnt = 0;
+    
+    for(iCnt=0;iCnt<iSize;iCnt++)
+    {
+        if(((Arr[iCnt]%3)==0)&&(Arr[iCnt]%5)==0)
+        {
+            printf("Elements are:%d\t",Arr[iCnt]);
+        }
+    }
+    
+}
+
+int main()
+{
+    int iCount = 0;
+    int *ptr = NULL;
+    int iCnt = 0;
+    int iRet =  0 ;
+    printf("Enter the number of elements :\n");
+    scanf("%d",&iCount);
+
+    ptr = (int*)malloc(iCount*sizeof(int));
+    printf("Enter the elements :\n");
+    for(iCnt=0;iCnt<iCount;iCnt++)
+    {
+        scanf("%d",&ptr[iCnt]);
+    }
+ Display(ptr,iCount);
+
+   
+   free(ptr);
+   
+    return 0;
+}
+/*ACCEPT N NUMBER FROM USER AND DISPLAY ALL SUCH ELEMENTS WHICH ARE MULTIPLES OF 11*/
+
+# include<stdio.h>
+# include<stdlib.h>
+
+void Display(int *Arr,int iSize)
+{  int iCnt = 0;
+    
+    for(iCnt=0;iCnt<iSize;iCnt++)
+    {
+        if((Arr[iCnt]%11)==0)
+        {
+            printf("%d\t",Arr[iCnt]);
+        }
+    }
+    
+}
+
+int main()
+{
+    int iCount = 0;
+    int *ptr = NULL;
+    int iCnt = 0;
+    int iRet =  0 ;
+    printf("Enter the number of elements :\n");
+    scanf("%d",&iCount);
+
+    ptr = (int*)malloc(iCount*sizeof(int));
+    printf("Enter the elements :\n");
+    for(iCnt=0;iCnt<iCount;iCnt++)
+    {
+        scanf("%d",&ptr[iCnt]);
+    }
+ Display(ptr,iCount);
+
+   
+   free(ptr);
+   
+    return 0;
+}

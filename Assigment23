@@ -1,0 +1,38 @@
+Q3. Accept Character from user and check whether it is digit or not
+(0-9).
+Input : 7
+Output : TRUE
+Input : d
+Output : FALSE
+
+code:
+import java.util.*;
+
+
+class program
+{   public static boolean ChkAlpha(char ch)
+    {   
+       if(Character.isDigit(ch))
+       {
+        return true;
+       }
+       else
+       {
+        return false;
+       }
+    }
+    public static void main(String arg[])
+    {
+        Scanner sc = new Scanner(System.in);
+        char ch  = sc.next().charAt(0);
+        boolean bRet = ChkAlpha(ch);
+        if(bRet==true)
+        {
+            System.out.println("TRUE");
+        }
+        else
+        {
+            System.out.println("FALSE");
+        }
+    }
+}
